@@ -13,3 +13,13 @@ h1, h2, h3, h4, h6 {
 h1 span, h2 span, h3 span, h4 span, h6 span {
   font-weight: 500;
 }
+
+h3 {
+  font-size: 48px;
+}
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 32px;
+    font-weight: normal;
+  }
+}

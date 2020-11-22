@@ -1,0 +1,52 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #272727;
+}
+
+body {
+  background-color: #D9EDEE;
+}
+
+h1, h2, h3, h4, h6 {
+  font-weight: lighter;
+}
+h1 span, h2 span, h3 span, h4 span, h6 span {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 48px;
+}
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 32px;
+    font-weight: normal;
+  }
+}
+
+.container {
+  padding: 50px 0;
+  width: 70%;
+  margin: auto;
+  max-width: 1300px;
+  padding: 50px 0;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+.container h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  list-style: none;
+  background-image: url("../../../../img/task.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 20px;
+}

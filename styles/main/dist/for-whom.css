@@ -14,6 +14,16 @@ h1 span, h2 span, h3 span, h4 span, h6 span {
   font-weight: 500;
 }
 
+h3 {
+  font-size: 48px;
+}
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 32px;
+    font-weight: normal;
+  }
+}
+
 .for-whom {
   width: 100%;
   background-color: #F0F8FA;
@@ -21,6 +31,7 @@ h1 span, h2 span, h3 span, h4 span, h6 span {
 .for-whom .for-whom-conrainer {
   padding: 70px 0;
   text-align: center;
+  padding: 50px 0;
   width: 70%;
   margin: auto;
   max-width: 1300px;
@@ -30,20 +41,15 @@ h1 span, h2 span, h3 span, h4 span, h6 span {
     width: 90%;
   }
 }
-.for-whom .for-whom-conrainer h3 {
-  font-size: 48px;
-}
-@media screen and (max-width: 500px) {
-  .for-whom .for-whom-conrainer h3 {
-    font-size: 32px;
-    font-weight: normal;
-  }
-}
 .for-whom .for-whom-conrainer .cards {
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.for-whom .for-whom-conrainer .cards .card p {
+  font-size: 18px;
+  margin-top: 15px;
 }
 @media screen and (max-width: 500px) {
   .for-whom .for-whom-conrainer .cards {
@@ -52,10 +58,7 @@ h1 span, h2 span, h3 span, h4 span, h6 span {
   .for-whom .for-whom-conrainer .cards .card {
     margin-bottom: 40px;
   }
-  .for-whom .for-whom-conrainer .cards .card p {
-    margin-top: 10px;
-  }
   .for-whom .for-whom-conrainer .cards .card img {
-    width: 70%;
+    width: 50%;
   }
 }
