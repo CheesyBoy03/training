@@ -1,0 +1,122 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #272727;
+}
+
+body {
+  background-color: #D9EDEE;
+}
+
+h1, h2, h3, h4, h6 {
+  font-weight: lighter;
+}
+h1 span, h2 span, h3 span, h4 span, h6 span {
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 800px;
+  background-image: url(../../img/back2.svg);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+header .header-container {
+  width: 70%;
+  margin: auto;
+  max-width: 1300px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  header .header-container {
+    width: 90%;
+  }
+}
+header .header-container img {
+  width: 60%;
+  z-index: 22;
+}
+header .header-container .header-banner {
+  font-size: 1.5em;
+  width: 60%;
+  height: 50%;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1030px) {
+  header .header-container .header-banner {
+    font-size: 1em;
+  }
+}
+header .header-container .header-banner .btn-for-form {
+  padding: 10px 0;
+  text-align: center;
+  width: 170px;
+  border-radius: 50px;
+  background-color: #37D8E4;
+  margin-top: 20px;
+  box-shadow: 3px 4px 10px rgba(110, 220, 228, 0.88);
+}
+header .header-container .header-banner .btn-for-form:hover {
+  cursor: pointer;
+  background-color: #30c5cf;
+  transform: 0.3s;
+  box-shadow: 1px 2px 10px rgba(110, 220, 228, 0.88);
+}
+header .mobile-header {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+  min-height: 550px;
+}
+@media screen and (max-width: 350px) {
+  header .mobile-header {
+    font-size: 0.8em;
+  }
+}
+header .mobile-header img {
+  margin: 20px auto;
+  width: 80%;
+}
+@media screen and (max-width: 350px) {
+  header .mobile-header img {
+    width: 60%;
+  }
+}
+header .mobile-header .btn-for-form {
+  padding: 10px 0;
+  text-align: center;
+  width: 170px;
+  border-radius: 50px;
+  background-color: #37D8E4;
+  margin-top: 20px;
+  box-shadow: 3px 4px 10px rgba(110, 220, 228, 0.88);
+}
+header .mobile-header .btn-for-form:hover {
+  cursor: pointer;
+  background-color: #30c5cf;
+  transform: 0.3s;
+  box-shadow: 1px 2px 10px rgba(110, 220, 228, 0.88);
+}
+@media screen and (max-width: 500px) {
+  header {
+    background-image: none;
+  }
+  header .header-container {
+    display: none;
+  }
+  header .mobile-header {
+    display: flex;
+  }
+}

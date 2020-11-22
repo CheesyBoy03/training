@@ -1,0 +1,15 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #272727;
+}
+
+body {
+  background-color: #D9EDEE;
+}
+
+h1, h2, h3, h4, h6 {
+  font-weight: lighter;
+}
+h1 span, h2 span, h3 span, h4 span, h6 span {
+  font-weight: 500;
+}

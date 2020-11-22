@@ -1,0 +1,56 @@
+@import 'for_all.sass'
+
+header
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-height: 800px
+    background:
+        image: url(../../img/back2.svg)
+        position: bottom
+        repeat: repeat-x    
+    .header-container
+        @include block()
+        height: 80vh
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            width: 60%
+            z-index: 22
+        .header-banner
+            font-size: 1.5em
+            width: 60%
+            height: 50%
+            margin-left: 40px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            @media screen and ( max-width: 1030px )
+                font-size: 1em
+            .btn-for-form
+                @include button()
+    .mobile-header
+        display: none
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 90%
+        margin: auto
+        height: 80vh
+        min-height: 550px
+        @media screen and ( max-width: 350px )
+                font-size: 0.8em
+        img
+            margin: 20px auto
+            width: 80%
+            @media screen and ( max-width: 350px )
+                width: 60%
+        .btn-for-form
+            @include button()
+    @media screen and ( max-width: 500px )
+        background-image: none
+        .header-container
+            display: none
+        .mobile-header
+            display: flex

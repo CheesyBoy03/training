@@ -1,0 +1,23 @@
+@import 'for_all.sass'
+
+.for-whom
+    width: 100%
+    background-color: $backColor3
+    .for-whom-conrainer
+        padding: 70px 0
+        text-align: center
+        @include block()
+        h3
+            font-size: 48px
+        .cards
+            margin-top: 50px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            @media screen and ( max-width: 500px )
+                flex-direction: column
+                .card
+                    margin-bottom: 40px
+                    img
+                        width: 70%
+        

@@ -1,0 +1,38 @@
+*
+    font-family: 'Roboto', sans-serif
+    color: #272727
+
+body
+    background-color: #D9EDEE
+
+h1,h2,h3,h4,h6
+    font-weight: lighter
+    span
+        font-weight: 500  
+
+//      MIXINS
+@mixin block()
+    width: 70%
+    margin: auto
+    max-width: 1300px
+    @media screen and ( max-width: 800px )
+        width: 90%
+
+@mixin button()
+    padding: 10px 0
+    text-align: center
+    width: 170px
+    border-radius: 50px
+    background-color: #37D8E4
+    margin-top: 20px
+    box-shadow: 3px 4px 10px rgba(110, 220, 228, 0.88)
+    &:hover
+        cursor: pointer
+        background-color: #30c5cf
+        transform: 0.3s
+        box-shadow: 1px 2px 10px rgba(110, 220, 228, 0.88)
+
+//      VARS
+$backColor1: #D9EEEE
+$backColor2: #B4DADD
+$backColor3: #F0F8FA

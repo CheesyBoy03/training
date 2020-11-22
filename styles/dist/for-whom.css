@@ -1,0 +1,52 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #272727;
+}
+
+body {
+  background-color: #D9EDEE;
+}
+
+h1, h2, h3, h4, h6 {
+  font-weight: lighter;
+}
+h1 span, h2 span, h3 span, h4 span, h6 span {
+  font-weight: 500;
+}
+
+.for-whom {
+  width: 100%;
+  background-color: #F0F8FA;
+}
+.for-whom .for-whom-conrainer {
+  padding: 70px 0;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  max-width: 1300px;
+}
+@media screen and (max-width: 800px) {
+  .for-whom .for-whom-conrainer {
+    width: 90%;
+  }
+}
+.for-whom .for-whom-conrainer h3 {
+  font-size: 48px;
+}
+.for-whom .for-whom-conrainer .cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .for-whom .for-whom-conrainer .cards {
+    flex-direction: column;
+  }
+  .for-whom .for-whom-conrainer .cards .card {
+    margin-bottom: 40px;
+  }
+  .for-whom .for-whom-conrainer .cards .card img {
+    width: 70%;
+  }
+}
