@@ -24,32 +24,21 @@ h3 {
   }
 }
 
-.container {
+.about-me {
+  background-color: #F0F8FA;
+}
+
+.about-me-container {
   padding: 50px 0;
   width: 70%;
   margin: auto;
   max-width: 1300px;
-  padding: 50px 0;
 }
-.container h3 {
+.about-me-container h3 {
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  .container {
+  .about-me-container {
     width: 90%;
   }
-}
-.container h3 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.container li {
-  font-size: 18px;
-  margin-bottom: 20px;
-  padding-left: 30px;
-  list-style: none;
-  background-image: url(../../../../img/task.png);
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: 20px;
 }
